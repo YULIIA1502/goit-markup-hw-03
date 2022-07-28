@@ -71,6 +71,9 @@ body {
 
 /*----------------------------------------HEADER------------------*/
 
+.header{
+    border-bottom: 1px solid #ECECEC; 
+}
 .header .conteiner{
     padding-top: 0;
     padding-bottom: 0;
