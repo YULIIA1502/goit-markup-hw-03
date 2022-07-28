@@ -38,11 +38,11 @@
 }
 
 .conteiner{
-    width: 1230px;
+    width: 1200px;
     padding: 94px 15px;
     margin-left: auto;
     margin-right: auto;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 p,
@@ -69,14 +69,17 @@ body {
 
 
 
-/*---------------------------------------LOGO-HEADER------------------*/
+/*----------------------------------------HEADER------------------*/
 
-.header-conteiner{
-    display: flex;
+.header .conteiner{
     padding-top: 0;
     padding-bottom: 0;
+    display: flex;
 }
+
 .header-logo-wed {
+    padding-top: 24px;
+    padding-bottom: 24px;
     margin-right: 93px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -143,14 +146,12 @@ body {
 .hero{
     
     background: var(--hero-backgroud-color);
-
-}
-.hero-conteiner{
-    display: block;
-    text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-
+}
+.hero .conteiner{
+    padding: 0;
+    width: 696px;
 }
 .hero-title{
     margin: 0;
@@ -164,7 +165,8 @@ body {
     text-transform: uppercase;
 }
 .hero-btn{
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     padding: 10px 32px;
     background: var(--btn-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -183,20 +185,17 @@ body {
 }
 /*-------------------------------------AFTER-HERO---------------------*/
 
-.after-hero{
-    padding-bottom: 0;
-}
 .item-conteiner{
     display: flex;
     margin: -15px;
 }
 .main-item{
     margin: 15px;
+    flex-basis: calc(100% / 4 - 30px)
 }
 
 .item-subtitle{
     margin-bottom: 10px;
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -212,8 +211,8 @@ body {
 }
 /*----------------------------------------------WORK-------------------*/
 
-.work{
-    padding-top: 118px;
+.work .conteiner{
+    padding-top: 0;
 }
 .work-heading{
     text-align: center;
@@ -230,6 +229,11 @@ body {
 }
 .work-heading-img:not(:last-child){
     margin-right:30px;
+}
+.work-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 /*----------------------------------TEAM-----------------------------------*/
 .team{
@@ -258,7 +262,6 @@ body {
 }
 
 .team-name{ 
-    margin-top: 30px;
     text-align: center;
     font-weight: 500;
     font-size: 16px;
@@ -267,19 +270,26 @@ body {
 }
 .team-job{
     margin-top: 10px;
-    margin-bottom: 30px;
     text-align: center;
     line-height: 1.18;
     color: var(--text-color);
 }
+.conteiner-team-name-and-job{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
 /*----------------------------------FOOTER-------------------------------------*/
 .footer{   
     background: var(--footer-background-color);
-}
-.footer-conteiner{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer .conteiner{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 
 .footer-logo-wed{
     font-family: 'Raleway', sans-serif;
@@ -299,6 +309,9 @@ body {
     margin-top: 20px;
     font-style: normal;
 }
+.footer-items:not(:first-child){
+    margin-top: 9px;
+}
 .footer-address{
     font-size: 14px;
     line-height: 1.71;
@@ -307,7 +320,6 @@ body {
 }
 .footer-mail, .footer-tel{
     display: block;
-    padding-top: 9px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -364,16 +376,21 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap:30px;
-    
 }
 .portfolio-item{
-    flex-basis: calc(100%-60px)/3;
-    box-sizing: border-box;
-    border: 1px solid #EEEEEE;
-    border-top: none;
+    flex-basis: calc((100% - 60px) / 3);    
+}
+.portfolio-link{
+    display: block;
+}
+    
+.portfolio-img{
+    display: block;
 }
 .portfolio-text-conteiner{
-    padding: 24px 20px;
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
 
 .portfolio-title{
