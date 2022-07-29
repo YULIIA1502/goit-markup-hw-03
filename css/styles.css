@@ -39,10 +39,12 @@
 
 .conteiner{
     width: 1200px;
-    padding: 94px 15px;
     margin-left: auto;
     margin-right: auto;
     /* border:1px solid red; */
+}
+.section{
+    padding: 94px 15px;
 }
 
 p,
@@ -75,8 +77,6 @@ body {
     border-bottom: 1px solid #ECECEC; 
 }
 .header .conteiner{
-    padding-top: 0;
-    padding-bottom: 0;
     display: flex;
 }
 
@@ -153,7 +153,6 @@ body {
     padding-bottom: 200px;
 }
 .hero .conteiner{
-    padding: 0;
     width: 696px;
 }
 .hero-title{
@@ -214,7 +213,7 @@ body {
 }
 /*----------------------------------------------WORK-------------------*/
 
-.work .conteiner{
+.work {
     padding-top: 0;
 }
 .work-heading{
@@ -288,11 +287,6 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer .conteiner{
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
 
 .footer-logo-wed{
     font-family: 'Raleway', sans-serif;
